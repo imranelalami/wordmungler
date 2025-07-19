@@ -1,12 +1,12 @@
 # Simple Wordlist Generator
 
-A C-based wordlist generator inspired by [CUPP](https://github.com/Mebus/cupp) that creates personalized password lists for security testing.
+A C-based wordlist generator that creates personalized password lists for security testing.
 
 ## How it works
 
 1. Collects personal information (names, birthdates, pets, hobbies)
 2. Builds a base wordlist from the input
-3. Uses Hashcat to combine terms and apply a password rule from [](https://github.com/stealthsploit/Optimised-hashcat-Rule)
+3. Uses Hashcat to combine terms and apply a password rule from [this repo](https://github.com/stealthsploit/Optimised-hashcat-Rule)
 4. Outputs a baseline wordlist for testing
 
 ## Requirements
