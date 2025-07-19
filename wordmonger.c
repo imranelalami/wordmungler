@@ -17,7 +17,7 @@ int main() {
     const char *questions[] = {
         "First name", "Last name", "Nickname", "Partner's name",
         "Child's name", "Pet name", "Company", "Birth year", 
-        "Birth date (DDMM)", "Favorite team", "Hobby", "Favorite color"
+        "Birth date (DDMM)", "Birth place", "Favorite team", "Hobby", "Favorite color"
     };
 
     for (int i = 0; i < sizeof(questions)/sizeof(questions[0]); i++) {
