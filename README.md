@@ -1,2 +1,29 @@
-# wordmungler
-A simple C tool that generates a custom wordlist from user-provided personal info and applies Hashcat combinations and rules to create a final password list
+# Simple Wordlist Generator
+
+A C-based wordlist generator inspired by [CUPP](https://github.com/Mebus/cupp) that creates personalized password lists for security testing.
+
+## How it works
+
+1. Collects personal information (names, birthdates, pets, hobbies)
+2. Builds a base wordlist from the input
+3. Uses Hashcat to combine terms and apply a password rule from [](https://github.com/stealthsploit/Optimised-hashcat-Rule)
+4. Outputs a baseline wordlist for testing
+
+## Requirements
+
+- `gcc` compiler
+- `hashcat`
+- `wget` or `curl`
+
+## Quick Start
+
+```bash
+# Compile
+gcc -o wordgen wordmonger.c
+
+# Run
+./wordgen
+```
+
+The final wordlist will be saved as `final.txt`.
+
